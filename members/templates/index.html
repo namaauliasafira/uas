@@ -4,16 +4,24 @@
 <html>
 
 <head>
-	<title>hello my fren</title>
+	<title>aulia_safira</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/ada.css' %}" />
+	<link rel="icon" href="{% static 'img/1.jpg' %}" type="image/x-icon">
+
 	<noscript>
-		<link rel="stylesheet" href="{% static 'css/noscript.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/no.css' %}" />
 	</noscript>
 </head>
 
 <body class="is-preload">
+	<div class="image-container">
+		<img src="path/to/your/image.jpg" alt="Sample Image" id="myImage">
+		<a href="path/to/your/image.jpg" download="downloaded_image.jpg" class="download-icon" id="downloadLink" style="display:none">
+		  <img src="download-icon.png" alt="Download">
+		</a>
+	  </div>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -25,23 +33,23 @@
 			<div class="items">
 
 				<div class="item intro span-2">
-					<h1>Parallelism</h1>
-					<p>A responsive portfolio site<br />
-						template by HTML5 UP</p>
+					<h1>aulia_safira</h1>
+					<p> Selamat datang di websit kami<br />
+						safirasafra.aulia123@gmai.com</p>
 				</div>
 
 				<article class="item thumb span-1">
-					<h2>You really got me</h2>
+					<h2>desain kamar</h2>
 					<a href="{% static 'img/1.jpg' %}" class="image"><img src="{% static 'img/1.jpg' %}" alt=""></a>
 				</article>
 
 				<article class="item thumb span-2">
-					<h2>Ad Infinitum</h2>
+					<h2>hiling</h2>
 					<a href="{% static 'img/2.jpg' %}" class="image"><img src="{% static 'img/2.jpg' %}" alt=""></a>
 				</article>
 
 				<article class="item thumb span-1">
-					<h2>Different.</h2>
+					<h2>gedung</h2>
 					<a href="{% static 'img/3.jpg' %}" class="image"><img src="{% static 'img/3.jpg' %}" alt=""></a>
 				</article>
 
@@ -119,10 +127,10 @@
 		<!-- Footer -->
 		<section id="footer">
 			<section>
-				<p>This is <strong>Parallelism</strong>, a responsive portfolio site template by <a
-						href="http://html5up.net">HTML5 UP</a>. Free for personal
-					and commercial use under the <a href="http://html5up.net/license">Creative Commons Attribution</a>
-					license.</p>
+				<p>saya <strong>membuat </strong>, website ini dikarenakan akan memper tajam sekil projrct saya <a
+						href="safirasafira.aulia123@gmail.com">aulia_safira</a>. selamat mengun jungi website kami
+					bila ada  keluhan bisa dm  <a href="safirasafira.aulia123@gmail.com">safirasafira.aulia123@gmail.com</a>
+					.</p>
 			</section>
 			<section>
 				<ul class="icons">
@@ -130,11 +138,11 @@
 					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="safirasafira.aulia123@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; Untitled</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Design: <a href="safirasafira.aulia123@gmail.com">aulia safira</a></li>
 				</ul>
 			</section>
 		</section>
@@ -148,6 +156,18 @@
 	<script src="{% static 'js/breakpoints.min.js' %}"></script>
 	<script src="{% static 'js/util.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
+	<script>
+		// Munculkan ikon unduh saat gambar dihover
+document.getElementById('myImage').addEventListener('mouseover', function () {
+  document.getElementById('downloadLink').style.display = 'block';
+});
+
+// Sembunyikan ikon unduh saat gambar tidak dihover
+document.getElementById('myImage').addEventListener('mouseout', function () {
+  document.getElementById('downloadLink').style.display = 'none';
+});
+
+	</script>
 
 </body>
 
